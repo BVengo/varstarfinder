@@ -1,0 +1,29 @@
+[project]
+name = "varstarfinder"
+version = "0.0.1"
+authors = [
+  { name="Benjamin van de Vorstenbosch", email="bencvdv@gmail.com" },
+]
+description = "A package for accessing observing data for variable stars, using the AAVSO website and Targets API"
+readme = "README.md"
+license = { file="LICENSE.md" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English"
+]
+dependencies = [
+    'pandas >= 1.4',
+    'requests >= 2.21',
+    'numpy >= 1.23',
+    'ephem >= 4.1',
+    'beautifulsoup4 >= 4.11',
+    'openpyxl >= 3.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BVengo/varstarfinder"
+"Bug Tracker" = "https://github.com/BVengo/varstarfinder/issues"

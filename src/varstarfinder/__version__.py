@@ -1,0 +1,8 @@
+__title__ = 'varstarfinder'
+__description__ = ' Provides potential observing times for variable stars'
+__url__ = 'https://github.com/BVengo/star_finder'
+__version__ = '0.0.1'
+__author__ = 'Benjamin van de Vorstenbosch'
+__author_email__ = 'bencvdv@gmail.com'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2022 Benjamin van de Vorstenbosch'
