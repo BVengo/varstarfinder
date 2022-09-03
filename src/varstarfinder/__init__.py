@@ -46,9 +46,7 @@ def get_observing_times(config: Config, file:str = None) -> pd.DataFrame:
     ephemeris = ephemeris.join(twilight_times)
 
     data = targets.merge(ephemeris, on="star_name", how="left")
-
-    data.to_excel("./out/pre_dates.xlsx")
-
+    
     # Adjust dates to correct timeframe. Hardcoded date columns because they're all dtype 'object', so can't be
     # differentiated between without extensive and (quite likely slow) column checks
     date_cols = ['start', 'mid', 'end', 'astronomical_twilight_start', 'astronomical_twilight_end']
