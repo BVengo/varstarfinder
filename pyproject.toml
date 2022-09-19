@@ -21,9 +21,11 @@ dependencies = [
     'numpy >= 1.23',
     'ephem >= 4.1',
     'beautifulsoup4 >= 4.11',
-    'openpyxl >= 3.0'
+    'openpyxl >= 3.0',
+    'webdriver-manager >= 3.8',
+    'selenium >= 4.4'
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/BVengo/varstarfinder"
-"Bug Tracker" = "https://github.com/BVengo/varstarfinder/issues"
+"Issues" = "https://github.com/BVengo/varstarfinder/issues"

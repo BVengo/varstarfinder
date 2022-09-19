@@ -1,6 +1,3 @@
-from warnings import warn
-
-
 class Config:
     def __init__(self, api_key: str, latitude: float, longitude: float, elevation: float, ut_offset: int, **kwargs):
         """
@@ -43,6 +40,6 @@ class Config:
                 missing_params.append(key)
 
         if len(missing_params) > 0:
-            warn(f"Missing API parameters: {missing_params}")
+            print(f"Missing optional API parameters: {missing_params}")
 
         self.params = {key: value for key, value in self.params.items() if value is not None}
